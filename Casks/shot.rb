@@ -1,6 +1,6 @@
 cask "shot" do
-  version "0.7.0-beta.9"
-  sha256 "a41adadc072a60cb994a9dcc239c024764116d581e2a9ff0016ac157190520b6"
+  version "0.7.0-beta.10"
+  sha256 "bd3c600c975db1f24f9616bbf9e211cecf11a96b84eae279eb92d0a6dcc4e67e"
 
   url "https://github.com/LorcanChinnock/shot/releases/download/v#{version}/Shot-v#{version}.zip"
   name "Shot"
