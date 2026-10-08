@@ -1,6 +1,6 @@
 cask "shot" do
-  version "0.7.0-beta.32"
-  sha256 "ed20f29eaad2287d1b27b334b626b1c9be8293cdded9147b551c5e84fe3b75cd"
+  version "0.7.0-beta.33"
+  sha256 "bdef70ad988afd2e87abf3ba00020e71b54ca848cefc978acc8aba03b0227dd2"
 
   url "https://github.com/LorcanChinnock/shot/releases/download/v#{version}/Shot-v#{version}.zip"
   name "Shot"
@@ -13,6 +13,7 @@ cask "shot" do
   end
 
   auto_updates true
+  depends_on arch: :arm64
   depends_on macos: :sequoia
 
   app "Shot.app"
