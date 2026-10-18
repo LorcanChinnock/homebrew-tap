@@ -1,6 +1,6 @@
 cask "warble" do
-  version "0.1.0-beta.2"
-  sha256 "d25227c8954d47c7616ab9e2f7b512c6981278cb65d6859cd75401e015c47e89"
+  version "0.1.0-beta.3"
+  sha256 "14a65dfad6d4008cc6edf09f0ea22fd85e68a43504de822ba4525a4f2996d376"
 
   url "https://github.com/LorcanChinnock/warble/releases/download/v#{version}/Warble-v#{version}.zip"
   name "Warble"
