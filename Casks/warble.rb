@@ -1,6 +1,6 @@
 cask "warble" do
-  version "0.1.0-beta.5"
-  sha256 "6183a6c56d4fade81c674291599f2ae3d12f9b442a80c31596be909fd7784998"
+  version "0.1.0-beta.6"
+  sha256 "302faad80dccb4e86e922db988c3b0e4ad651d1bb67fff6aa873b22e55fb1e3e"
 
   url "https://github.com/LorcanChinnock/warble/releases/download/v#{version}/Warble-v#{version}.zip"
   name "Warble"
@@ -16,6 +16,7 @@ cask "warble" do
   depends_on macos: :sequoia
 
   app "Warble.app"
+  binary "#{appdir}/Warble.app/Contents/MacOS/warble-cli", target: "warble"
 
   uninstall quit: "dev.lorcan.Warble"
 
@@ -31,6 +32,6 @@ cask "warble" do
     Warble isn't notarized by Apple yet, so macOS blocks it the first time you open it.
     Open Warble and click Done, then click Open Anyway in
     System Settings > Privacy & Security and confirm. You only do this once.
-    Steps with pictures: https://warble.lorcanchinnock.com/#install
+    Steps: https://warble.lorcanchinnock.com/#install
   EOS
 end
