@@ -1,6 +1,6 @@
 cask "shot" do
-  version "0.7.0-beta.71"
-  sha256 "76ebc7ff0d248ef5bac16fba10d593a12d14885a94eeff75cf7a45fae8ec5fe2"
+  version "0.7.0-beta.73"
+  sha256 "f756823043cec72f15dd9283bab6052bf474f8b87d1a76cc7c7e45a427b87b63"
 
   url "https://github.com/LorcanChinnock/shot/releases/download/v#{version}/Shot-v#{version}.zip"
   name "Shot"
@@ -16,7 +16,6 @@ cask "shot" do
   depends_on macos: :sequoia
 
   app "Shot.app"
-  binary "#{appdir}/Shot.app/Contents/MacOS/shot-cli", target: "shot"
 
   uninstall quit: "dev.lorcan.Shot"
 
