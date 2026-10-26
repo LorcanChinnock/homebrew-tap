@@ -1,6 +1,6 @@
 cask "warble" do
-  version "0.1.0-beta.8"
-  sha256 "b973c1dd9e08309d57246263ac38c7e55a8fdf2be4547f0c6978b50974bc5918"
+  version "0.1.0-beta.9"
+  sha256 "529a5a3433b44a75055bce31eeb5ed779f392c0fab473f316760df0b3cee11fd"
 
   url "https://github.com/LorcanChinnock/warble/releases/download/v#{version}/Warble-v#{version}.zip"
   name "Warble"
@@ -16,7 +16,6 @@ cask "warble" do
   depends_on macos: :sequoia
 
   app "Warble.app"
-  binary "#{appdir}/Warble.app/Contents/MacOS/warble-cli", target: "warble"
 
   uninstall quit: "dev.lorcan.Warble"
 
